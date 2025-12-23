@@ -1,0 +1,107 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 170px;
+    position: relative;
+}
+
+.logo{
+    width: 7rem;
+    height: 5rem;
+}
+
+/* Desktop Menu */
+.nav-menu{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav-menu li{
+    cursor: pointer;
+}
+
+/* Button */
+.connect{
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: linear-gradient(267deg,#da7c25 0.36%,#b923 102.65%);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.connect:hover{
+    transform: scale(1.1);
+    background: linear-gradient(267deg,#b923 0.36%,#da7c25 102.65%);
+}
+
+.line2{
+    margin-top: 2px;
+    height: 1.5px;
+    background: white;
+}
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================== RESPONSIVE ================== */
+
+/* Tablets */
+@media (max-width: 1024px){
+    .navbar{
+        margin: 20px 50px;
+    }
+
+    .nav-menu{
+        gap: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 0;
+        display: none;
+    }
+
+    .nav-menu.active{
+        display: flex;
+    }
+
+    .connect{
+        display: none;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+    .logo{
+        width: 5.5rem;
+        height: 4rem;
+    }
+
+    .navbar{
+        margin: 15px 20px;
+    }
+}

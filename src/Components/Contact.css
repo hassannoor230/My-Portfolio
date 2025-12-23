@@ -1,0 +1,191 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+/* Title */
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.line3 {
+    background: #fff;
+    height: 3px;
+    margin-top: 10px;
+}
+
+/* Main Section */
+.section {
+    display: flex;
+    gap: 150px;
+    width: 100%;
+}
+
+/* Left */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left h1 {
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #da7c25 80%, #b133e1 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left p {
+    max-width: 550px;
+    color: #d8d8d8;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #d8d8d8;
+    font-size: 22px;
+}
+
+.detail p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    word-break: break-word;
+}
+
+/* Right / Form */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.right label {
+    color: #d8d8d8;
+    font-size: 22px;
+}
+
+.right input,
+.right textarea {
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: #323232;
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+.right textarea {
+    resize: none;
+    height: 180px;
+}
+
+/* Button */
+.Submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b133e1 100%);
+    padding: 16px 45px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: fit-content;
+}
+
+.Submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 14px 30px rgba(231, 186, 62, 0.45);
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .contact {
+        margin: 80px 60px;
+    }
+
+    .section {
+        gap: 80px;
+    }
+
+    .left h1 {
+        font-size: 42px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .contact {
+        margin: 60px 40px;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .left h1 {
+        font-size: 36px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .details {
+        font-size: 20px;
+    }
+
+    .Submit {
+        align-self: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contact {
+        margin: 50px 20px;
+        gap: 60px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+
+    .right label {
+        font-size: 18px;
+    }
+
+    .Submit {
+        width: 100%;
+        text-align: center;
+    }
+}

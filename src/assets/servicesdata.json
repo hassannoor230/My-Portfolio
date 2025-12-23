@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Designing",
+      "description": "Modern, responsive and user-friendly website designs using HTML, CSS, and Tailwind.",
+      "icon": "web-design",
+      "price": "Starting from $100"
+    },
+    {
+      "id": 2,
+      "title": "React Development",
+      "description": "High-performance single-page applications built with React and modern JavaScript.",
+      "icon": "react",
+      "price": "Starting from $150"
+    },
+    {
+      "id": 3,
+      "title": "MERN Stack Development",
+      "description": "Full-stack web applications using MongoDB, Express, React, and Node.js.",
+      "icon": "mern",
+      "price": "Starting from $250"
+    },
+    {
+      "id": 4,
+      "title": "WordPress Development",
+      "description": "Custom WordPress websites, themes, and plugins with easy content management.",
+      "icon": "wordpress",
+      "price": "Starting from $120"
+    },
+    {
+      "id": 5,
+      "title": "UI/UX Design",
+      "description": "Clean and intuitive UI/UX designs focused on user experience and conversions.",
+      "icon": "ui-ux",
+      "price": "Starting from $80"
+    },
+
+    {
+      "id": 6,
+      "title": "Website Maintenance",
+      "description": "Website updates, bug fixes, performance optimization, and ongoing support.",
+      "icon": "maintenance"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+/* Title line */
+.line {
+    width: 66%;
+    height: 2px;
+    background: white;
+    margin: 1em auto 0;
+}
+
+/* Section */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 170px;
+}
+
+/* Title */
+.service-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Grid */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 60px 0 80px;
+}
+
+/* Card */
+.services-format {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 2px solid wheat;
+    transition: 0.4s ease;
+}
+
+/* Card text */
+.services-format h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services-format h2 {
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b133e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.services-format p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Read more */
+.readmore {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Hover */
+.services-format:hover {
+    border: 2px solid #ff00ff;
+    background-image: linear-gradient(45deg, #3f0028, #582300);
+    transform: scale(1.03);
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .services {
+        margin: 80px 60px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-title h1 {
+        font-size: 42px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .services {
+        margin: 60px 40px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .service-title h1 {
+        font-size: 36px;
+    }
+
+    .services-format {
+        padding: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .services {
+        margin: 50px 20px;
+    }
+
+    .service-title h1 {
+        font-size: 30px;
+    }
+
+    .services-format {
+        padding: 30px;
+    }
+
+    .services-format h2 {
+        font-size: 24px;
+    }
+
+    .services-format p {
+        font-size: 16px;
+    }
+}
