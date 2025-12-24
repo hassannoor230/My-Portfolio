@@ -1,6 +1,6 @@
 import React from 'react'
 import './Mywork.css'
-import WorkData from '../assets/WorkData.js'
+import WorkData from '.../assets/WorkData.js'
 import { FaArrowRight } from 'react-icons/fa'
 
 const Mywork = () => {
