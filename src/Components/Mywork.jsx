@@ -1,6 +1,6 @@
 import React from 'react'
 import './Mywork.css'
-import workData from '../assets/workData'
+import WorkData from '../assets/WorkData.js'
 import { FaArrowRight } from 'react-icons/fa'
 
 const Mywork = () => {
@@ -12,15 +12,15 @@ const Mywork = () => {
       </div>
 
       <div className="container">
-        {workData.map(work => (
-          <div key={work.id} className="work-card">
+        {WorkData.map(work => (
+          <div key={WorkData.id} className="work-card">
             <img
-              src={work.image}
-              alt={work.title}
+              src={WorkData.image}
+              alt={WorkData.title}
               className="work-img"
             />
-            <h3>{work.title}</h3>
-            <p>{work.description}</p>
+            <h3>{WorkData.title}</h3>
+            <p>{WorkData.description}</p>
           </div>
         ))}
       </div>
