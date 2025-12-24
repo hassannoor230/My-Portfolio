@@ -12,15 +12,11 @@ const Mywork = () => {
       </div>
 
       <div className="container">
-        {WorkData.map(work => (
-          <div key={WorkData.id} className="work-card">
-            <img
-              src={WorkData.image}
-              alt={WorkData.title}
-              className="work-img"
-            />
-            <h3>{WorkData.title}</h3>
-            <p>{WorkData.description}</p>
+        {WorkData.map((work) => (
+          <div key={work.id} className="work-card">
+            <img src={work.image} alt={work.title} className="work-img" />
+            <h3>{work.title}</h3>
+            <p>{work.description}</p>
           </div>
         ))}
       </div>
